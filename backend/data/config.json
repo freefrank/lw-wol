@@ -1,0 +1,9 @@
+{
+  "password": "",
+  "targets": [],
+  "activeTargetId": null,
+  "ping": {
+    "intervalMs": 1000,
+    "timeoutMs": 60000
+  }
+}

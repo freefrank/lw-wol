@@ -1,0 +1,14 @@
+services:
+  lw-wol:
+    image: freefrank/lw-wol:latest
+    container_name: lw-wol
+    network_mode: host
+    env_file:
+      - .env
+    environment:
+      APP_PASSWORD: ${APP_PASSWORD:?APP_PASSWORD must be set (e.g. via .env)}
+      PORT: ${PORT:-8086}
+      SERVE_STATIC: ${SERVE_STATIC:-true}
+    volumes:
+      - ./backend/data:/app/backend/data
+    restart: unless-stopped

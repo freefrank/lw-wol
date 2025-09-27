@@ -1,0 +1,13 @@
+{
+  "name": "lw-wol",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run dev:backend & npm run dev:frontend",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:frontend": "npm --prefix frontend run build",
+    "install:backend": "npm --prefix backend install",
+    "install:frontend": "npm --prefix frontend install"
+  }
+}
